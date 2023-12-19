@@ -14,3 +14,6 @@
 ```
 "use client";
 ```
+
+## Rutas
+<p>Crear el <b>Directorio</b> de la ruta y dentro del archivo con el nombre <b>Page.tsx</b></p>
