@@ -1,12 +1,13 @@
-'use client'
+"use client";
 
 import L from "leaflet";
 import { MapContainer, TileLayer, Marker } from "react-leaflet";
-import MarkerIcon from "../node_modules/leaflet/dist/images/marker-icon.png";
-import MarkerShadow from "../node_modules/leaflet/dist/images/marker-shadow.png";
+import MarkerIcon from "../../node_modules/leaflet/dist/images/marker-icon.png";
+import MarkerShadow from "../../node_modules/leaflet/dist/images/marker-shadow.png";
 import "leaflet/dist/leaflet.css";
+import Geoman from "../components/Geoman";
 
-export default function Home() {
+const page = () => {
   return (
     <div>
       <MapContainer
@@ -36,7 +37,10 @@ export default function Home() {
           }
           position={[51.505, -0.09]}
         ></Marker>
+        <Geoman />
       </MapContainer>
     </div>
   );
-}
+};
+
+export default page;
